@@ -7,6 +7,8 @@ import reportWebVitals from './reportWebVitals';
 import './index.css';
 import {BrowserRouter, Link, Route, Routes} from "react-router-dom";
 import {Counter} from "./features/counter/Counter";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import JsonApi from "./features/jsonapi/JsonApi";
 
 const container = document.getElementById('root')!;
 const root = createRoot(container);
@@ -23,7 +25,7 @@ root.render(
         <Routes>
             <Route path="/" element={<App />} />
             <Route path="counter" element={<Counter />} />
-            <Route path="api" element={<div>Test</div>} />
+            <Route path="api" element={<JsonApi />} />
         </Routes>
         </div>
       </BrowserRouter>
